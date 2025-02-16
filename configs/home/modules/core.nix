@@ -20,6 +20,7 @@ in {
         evince
         firefox
         gimp
+        inkscape
         libreoffice
 
         nerd-fonts.jetbrains-mono

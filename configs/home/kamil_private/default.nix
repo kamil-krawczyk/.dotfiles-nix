@@ -40,6 +40,8 @@ in {
       "beeper"
     ];
     masApps = {
+      "Affinity Designer 2" = 1616831348;
+      "Affinity Photo 2: Image Editor" = 1616822987;
       "Amphetamine" = 937984704;
       "Xcode" = 497799835;
     };
