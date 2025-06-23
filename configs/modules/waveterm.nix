@@ -1,5 +1,0 @@
-{
-  programs.waveterm = {
-    enable = true;
-  };
-}

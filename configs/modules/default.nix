@@ -22,7 +22,6 @@
     ./fzf.nix
     ./eza.nix
 
-    ./waveterm.nix
     ./helix.nix
 
     ./git.nix
