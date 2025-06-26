@@ -7,7 +7,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "material_deep_ocean";
+      theme = "catppuccin_frappe";
       editor = {
         auto-format = true;
         bufferline = "multiple";
