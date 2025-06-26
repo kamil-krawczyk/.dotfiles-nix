@@ -5,6 +5,7 @@
     git = true;
     colors = "auto";
     icons = "auto";
+    theme = "catppuccin";
     extraOptions = [
       "--group"
       "--group-directories-first"
