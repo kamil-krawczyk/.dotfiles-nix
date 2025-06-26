@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   inputs,
   ...
 }: let
@@ -25,11 +26,19 @@ in {
         condition = "gitdir:~/.dotfiles-nix/";
       }
     ];
-    extraConfig = {
-      gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
-      init.defaultBranch = "main";
-      merge.conflictstyle = "zdiff3";
-    };
+    extraConfig =
+      {
+        gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
+        init.defaultBranch = "main";
+        merge.conflictstyle = "zdiff3";
+      }
+      // lib.attrsets.optionalAttrs (config.host.profile == "macro-system") {
+        url = {
+          "ssh://git-server.macro2.local/" = {
+            insteadOf = "https://git-server.macro2.local/";
+          };
+        };
+      };
     delta = {
       enable = true;
       options = {
